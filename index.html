@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Abderrahmen Mansour</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="images/icon_me.ico">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+	<link rel="stylesheet" href="ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css">
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery.min.js"></script>
+	<script type="text/javascript">
+		var arrLang = {
+		  'en': {
+			'Home': 'Home',
+			'Hello': 'Hello',
+			'About': 'About',
+			'Skills': 'Skills',
+			'Projects': 'Projects',
+			'Contact': 'Contact',
+			'Home2': '<span class="icon-long-arrow-right mr-2"></span>Home',
+			'About2': '<span class="icon-long-arrow-right mr-2"></span>About',
+			'Projects2': '<span class="icon-long-arrow-right mr-2"></span>Projects',
+			'Contact2': '<span class="icon-long-arrow-right mr-2"></span>Contact',
+			'I am': 'I am <span>Abderrahmen Mansour</span>',
+			'software': 'A Data scientist .',
+			'hire': 'Hire me',
+			'devMob': 'I am a <span>Data Scientist</span> from Tunisia.',
+			'welcome': 'Welcome',
+			'aboutme': 'About me',
+			'desc1': 'A Data Scientist with a Mechatronics background, I bring practical experience from the Data Analytics field. My skills are honed through professional work, a Data Science Bootcamp, and an AWS program. I am dedicated to using data to solve complex challenges, continually seeking to innovate and grow in the dynamic world of data science.',
+			'mobile':'Mechatronics Engineer with expertise in software development',
+			'mobiledesc':' Proficient in creating effective software solutions, demonstrating strong skills in programming and system integration.',
+			'Application':'Data Science',
+			'appdesc':'Deep knowladge in Python, Artificial intelligence and Data analysis',
+			'finished':'Finished Projects',
+			'skills':'Skills',
+			'myskills':'My Skills',
+			'skillsdesc':'These are the skills i am proficient in, needless to say a software engineer is always able to adapt to new languages.',
+			'whatdoido':'What I Do',
+			'sassy':'Conception, development and a bit of magic',
+			'mydesc':'Always start at the drawing boards and then proceed to create <b>innovative</b> products.',
+			'imfor':'I am <span>Available</span> For Permanent position',
+			'Accomplishments':'Accomplishments',
+			'projects':'My Projects',
+			'projectsDesc':'These are the various projects i worked on.',
+			'pokedex':'A Web Application for Job Hunters and students to find better intenships and part-time jobs.',
+			'mdDesc':'An App to localize doctors by GPS, make appointments and online payment.',
+			'webdev':'Web Development',
+			'mobdev':'Mobile Development',
+			'sereptDesc':'A mobile application for the management of city of culture in Tunisia.',
+			'cross':'Cross-platform Development',
+			'datasc':'Data Analysis - MajestEYE',
+			'piDesc':'A cross-platform App to manage the famous city of culture in Tunisia, introducing features that rely on webservice consumption.',
+			'contact':'Contact',
+			'contactMe':'Contact Me',
+			'interested':'I am actively seeking permanent employment opportunities in Germany or across Europe, eager to contribute my skills and experience in a dynamic professional setting.',
+			'letsTalk':'Let us talk about',
+			'americas':'I would like to be hired for an internship somewhere in western Europe or the Americas.',
+			'links':'Links',
+			'Services':'<span class="icon-long-arrow-right mr-2"></span>Services',
+			'Services2':'Services',
+			'Design':'<span class="icon-long-arrow-right mr-2"></span>Web Design',
+			'Web':'<span class="icon-long-arrow-right mr-2"></span>Web Development',
+			'Mobile':'<span class="icon-long-arrow-right mr-2"></span>Mobile development',
+			'Game':'<span class="icon-long-arrow-right mr-2"></span>Data Science',
+			'Software':'<span class="icon-long-arrow-right mr-2"></span>Business Intelligence',
+			'Questions':'Have any Questions ?',
+			'location':'<span class="icon icon-map-marker" style="color:rgba(255, 255, 255, 0.7)"></span><span class="text">Erfurt, Germany.</span>',
+			'download': 'Download my CV',
+			'medicalDesc': 'A real estate website: Dari that allows users to buy, sell and rent all kind of goods with 3D virtual Visits and a loan simulator.',
+			'androidDesc': 'A web application for digitizing school records and managing workflows.',
+			'iosDesc': 'a web application to collect functional information on proteins, with accurate, consistent and rich annotation - Still in development.',
+			'unityDesc': 'Investigating variability of flower phenology and molecular diversity in argan trees.'
+		  },
+		  '': {
+			'Home': 'Accueil',
+			'Hello': 'Bonjour',
+			'About': '&Agrave; propos',
+			'Skills': 'Comp&eacute;tences',
+			'Projects': 'Projets',
+			'Contact': 'Contact',
+			'Home2': '<span class="icon-long-arrow-right mr-2"></span>Accueil',
+			'About2': '<span class="icon-long-arrow-right mr-2"></span>&Agrave; propos',
+			'Projects2': '<span class="icon-long-arrow-right mr-2"></span>Projets',
+			'Contact2': '<span class="icon-long-arrow-right mr-2"></span>Contact',
+			'I am': 'Je suis <span>Abderrahmen Mansour</span>',
+			'software': 'Un &Eacute;tudiant En G&eacute;nie Logiciel',
+			'hire': 'Embauchez moi',
+			'devMob': 'Je suis un <span>D&eacute;veloppeur Web</span> de la Tunisie.',
+			'welcome': 'Bienvenue',
+			'aboutme': '&Agrave; propos de moi',
+			'desc1': 'Ing&eacute;nieur logiciel et d&eacute;veloppeur web, passionn&eacute; par la d&eacute;couverte et la ma&icirc;trise des technologies les plus r&eacute;centes actuellement &eacute;tudiant à Esprit, en Tunisie.',
+			'mobile':'D&eacute;veloppement mobile',
+			'mobiledesc':'Comp&eacute;tent avec Android et le d&eacute;veloppement d&#39iOS.',
+			'Application':'D&eacute;veloppement d&#39applications',
+			'appdesc':'Une prise solide des d&eacute;veloppments d&#39applications sur .Net et Java EE.',
+			'finished':'Projets r&eacute;alis&eacute;s',
+			'skills':'Comp&eacute;tences',
+			'myskills':'Mes comp&eacute;tences',
+			'skillsdesc':'Ce sont les comp&eacute;tences dans lesquelles j&#39;excelle, inutile de dire qu&#39;un ing&eacute;nieur en logiciel est toujours capable de s&#39adapter à de nouvelles langues.',
+			'whatdoido':'Mes savoir-faire',
+			'sassy':'Conception, d&eacute;veloppement et un peu de magie',
+			'mydesc':'Toujours commencer par la conception et par la suite, cr&eacute;er des produits <b>innovants</b>.',
+			'imfor':'Je suis <span>Disponible</span> pour des Stages',
+			'Accomplishments':'R&eacute;alisations',
+			'projects':'Mes projets',
+			'projectsDesc':'Ce sont les diff&eacute;rents projets sur lesquels j&#39;ai travaill&eacute;.',
+			'pokedex':'Une application qui permet de collecter des informations sur tous les genres Pok&eacute;mon.',
+			'mdDesc':'Une application pour localiser les docteurs et prendre des rendez-vous en ligne.',
+			'webdev':'D&eacute;veloppeur de web',
+			'sereptDesc':'Une application pour les entreprises priv&eacute;es pour les aider &agrave; former leurs employ&eacute;s en informatique &amp; dans les mesures de s&eacute;curit&eacute;.',
+			'cross':'D&eacute;veloppement des applications multiplateformes',
+			'piDesc':'Une application multiplateforme qui permet de connecter les personnes du monde entier, en introduisant des caract&eacute;ristiques qui prennent appuie sur la consommation des web services.',
+			'contact':'Contact',
+			'contactMe':'Contactez Moi',
+			'interested':'Je suis actuellement int&eacute;ress&eacute; par des stages en Europe ou en Am&eacute;rique.',
+			'letsTalk':'En bref',
+			'americas':'J&#39aimerai int&eacute;grer un stage quelque part en Europe de l&#39Ouest ou en Am&eacute;rique.',
+			'links':'Liens',
+			'Services':'<span class="icon-long-arrow-right mr-2"></span>Services',
+			'Services2':'Services',
+			'Design':'<span class="icon-long-arrow-right mr-2"></span>Cr&eacute;ation de sites web',
+			'Web':'<span class="icon-long-arrow-right mr-2"></span>D&eacute;veloppement web',
+			'Mobile':'<span class="icon-long-arrow-right mr-2"></span>D&eacute;veloppement de mobile',
+			'Game':'<span class="icon-long-arrow-right mr-2"></span>Programmation de jeu vid&eacute;o',
+			'Software':'<span class="icon-long-arrow-right mr-2"></span>D&eacute;veloppement de logiciel',
+			'Questions':'Questions ?',
+			'location':'<span class="icon icon-map-marker" style="color:rgba(255, 255, 255, 0.7)"></span><span class="text">Erfurt, Allemagne.</span>',
+			'download': 'T&eacute;l&eacute;chargez mon CV',
+			'medicalDesc': 'Une application de dossier m&eacute;dical num&eacute;rique multi plateforme qui utilise les technologies Blockchain et iot. - en d&eacute;veloppement.',
+			'androidDesc': 'Un portail scolaire pour les &eacute;lèves du secondaire pour se connecter avec leurs enseignants et l&#39administration.',
+			'iosDesc': 'Une application où vous posez des questions et obtenez des r&eacute;ponses similaires à stackoverflow avec des concours - en d&eacute;veloppement.',
+			'unityDesc': 'Un jeu d&#39aventure mobile RPG où le joueur acquiert des pouvoirs, r&eacute;sout des &eacute;nigmes et joue à des mini-jeux pour avancer.'
+		  },
+		  '': {
+			'Home': 'Startseite',
+			'Hello': 'Hallo',
+			'About': 'Über',
+			'Skills': 'Kompetenzen',
+			'Projects': 'Projekte',
+			'Contact': 'Kontakt',
+			'I am': 'Ich bin <span>Abderrahmen Mansour</span>',
+			'software': 'Ein Student der Softwaretechnik.',
+			'hire': 'Stellt mich ein',
+			'devMob': 'Ich bin ein <span>Mobiler Entwickler</span> aus Tunesien.',
+			'welcome': 'Herzlich willkommen',
+			'aboutme': 'Über mich',
+			'desc1': 'Ein Softwareentwickler, der leidenschaftlich gern die neuesten Technologien entdeckt und beherrscht. Derzeit studiert er bei Esprit in Tunesien.',
+			'mobile':'Mobile Entwicklung',
+			'mobiledesc':'Kompetent in der Android- und iOS-Entwicklung.',
+			'Application':'Anwendungsentwicklung',
+			'appdesc':'Fundierte Kenntnisse in der Anwendungsentwicklung in .NET und Java EE.',
+			'finished':'Abgeschlossene Projekte',
+			'skills':'Kompetenzen',
+			'myskills':'Meine Fähigkeiten',
+			'skillsdesc':'Dies sind die Fähigkeiten, die ich beherrsche, es versteht sich von selbst, dass ein Softwareentwickler immer in der Lage ist, sich an neue Sprachen anzupassen.',
+			'whatdoido':'Was ich mache',
+			'sassy':'Konzeption, Entwicklung und ein bisschen Magie',
+			'mydesc':'Beginnen Sie immer an den Zeichenbrettern und fahren Sie dann mit der Erstellung von <b> innovativen </ b> Produkten fort.',
+			'imfor':'Ich bin <span> verfügbar </ span> für Praktika',
+			'Accomplishments':'Errungenschaften',
+			'projects':'Meine Projekte',
+			'projectsDesc':'Dies sind die verschiedenen Projekte, an denen ich gearbeitet habe.',
+			'pokedex':'Eine Pok&eacute;dex-App, mit der Sie Informationen über alle Arten von Pok&eacute;mon über den Verbrauch von Webservices abrufen können.',
+			'mdDesc':'Eine App, um Ärzte per GPS zu lokalisieren, Termine zu vereinbaren und online zu bezahlen.',
+			'webdev':'Web Entwicklung',
+			'sereptDesc':'Eine App für ein privates Unternehmen, mit der sie ihre Mitarbeiter in IT &amp; Sicherheitsmaßnahmen schulen können.',
+			'cross':'Plattformübergreifende Entwicklung',
+			'piDesc':'Eine plattformübergreifende App, mit der Menschen aus der ganzen Welt miteinander verbunden werden können.',
+			'contact':'Kontakt',
+			'contactMe':'Kontaktiere mich',
+			'interested':'Ich interessiere mich derzeit für Praktika in Europa oder Amerika.',
+			'letsTalk':'Lass uns darüber reden',
+			'americas':'Ich würde gerne für ein Praktikum in Westeuropa oder Amerika eingestellt werden.',
+			'links':'Links',
+			'Services':'<span class="icon-long-arrow-right mr-2"></span>Dienstleistungen',
+			'Services2':'Dienstleistungen',
+			'Design':'<span class="icon-long-arrow-right mr-2"></span>Web Design',
+			'Web':'<span class="icon-long-arrow-right mr-2"></span>Web Entwicklung',
+			'Mobile':'<span class="icon-long-arrow-right mr-2"></span>Mobile Entwicklung',
+			'Game':'<span class="icon-long-arrow-right mr-2"></span>Spielentwicklung',
+			'Software':'<span class="icon-long-arrow-right mr-2"></span>Software-Entwicklung',
+			'Questions':'Haben Sie noch Fragen ?',
+			'location':'<span class="icon icon-map-marker" style="color:rgba(255, 255, 255, 0.7)"></span><span class="text">Erfurt, Deutschland.</span>',
+			'download': 'Laden Sie meinen CV'
+		  }
+		};
+	
+		// Process translation
+		$(document).ready(function () {
+		$('.switch-lang').append('<div class="current-lang translate" id="en"><img class="lang-flag" src="data/icons/world-flag-icons/128/Flag_of_United_Kingdom.png"/>'+
+							  '<p class="lang-text">English</p>'+
+							'</div>'+
+							'<div class="lang-dropdown">'+
+							  '<div class="selecting-lang translate" id="fr"><img class="lang-flag" src="data/icons/world-flag-icons/128/Flag_of_France.png"/>'+
+								'<p class="lang-text">Français</p>'+
+							  '</div>'+
+							  '<div class="selecting-lang translate" id="de"><img class="lang-flag" src="data/icons/world-flag-icons/128/Flag_of_Germany.png"/>'+
+								'<p class="lang-text" >Deutsch</p>'+
+							  '</div>'+
+							'</div>');
+		  $(document).on('click', '.translate', function() {
+			var lang = $(this).attr('id');
+			
+			if (lang == 'en'){
+				document.getElementsByName("name")[0].value ="";
+				document.getElementsByName("name")[0].placeholder ="Your Name";
+				document.getElementsByName("_replyto")[0].value ="";
+				document.getElementsByName("_replyto")[0].placeholder ="Your Email";
+				document.getElementsByName("_subject")[0].value ="";
+				document.getElementsByName("_subject")[0].placeholder ="Subject";
+				document.getElementsByName("message")[0].value ="";
+				document.getElementsByName("message")[0].placeholder ="Message";
+				document.getElementsByName("sendBtn")[0].value ="Send";
+				$('.switch-lang').empty();
+				$('.switch-lang').append('<div class="current-lang translate" id="en"><img class="lang-flag" src="data/icons/world-flag-icons/128/Flag_of_United_Kingdom.png"/>'+
+							  '<p class="lang-text">English</p>'+
+							'</div>'+
+							'<div class="lang-dropdown">'+
+							  '<div class="selecting-lang translate" id="fr"><img class="lang-flag" src="data/icons/world-flag-icons/128/Flag_of_France.png"/>'+
+								'<p class="lang-text">Français</p>'+
+							  '</div>'+
+							  '<div class="selecting-lang translate" id="de"><img class="lang-flag" src="data/icons/world-flag-icons/128/Flag_of_Germany.png"/>'+
+								'<p class="lang-text" >Deutsch</p>'+
+							  '</div>'+
+							'</div>');
+				
+			}else if (lang == 'fr'){
+				document.getElementsByName("name")[0].value ="";
+				document.getElementsByName("name")[0].placeholder ="Votre Nom";
+				document.getElementsByName("_replyto")[0].value ="";
+				document.getElementsByName("_replyto")[0].placeholder ="Votre Email";
+				document.getElementsByName("_subject")[0].value ="";
+				document.getElementsByName("_subject")[0].placeholder ="Objet";
+				document.getElementsByName("message")[0].value ="";
+				document.getElementsByName("message")[0].placeholder ="Message";
+				document.getElementsByName("sendBtn")[0].value ="Envoyer";
+				$('.switch-lang').empty();
+				$('.switch-lang').append('<div class="current-lang translate" id="fr"><img class="lang-flag" src="data/icons/world-flag-icons/128/Flag_of_France.png"/>'+
+							  '<p class="lang-text">Français</p>'+
+							'</div>'+
+							'<div class="lang-dropdown">'+
+							  '<div class="selecting-lang translate" id="en"><img class="lang-flag" src="data/icons/world-flag-icons/128/Flag_of_United_Kingdom.png"/>'+
+								'<p class="lang-text">English</p>'+
+							  '</div>'+
+							  '<div class="selecting-lang translate" id="de"><img class="lang-flag" src="data/icons/world-flag-icons/128/Flag_of_Germany.png"/>'+
+								'<p class="lang-text" >Deutsch</p>'+
+							  '</div>'+
+							'</div>');
+
+			}else if (lang == 'de'){
+				document.getElementsByName("name")[0].value ="";
+				document.getElementsByName("name")[0].placeholder ="Dein Name";
+				document.getElementsByName("_replyto")[0].value ="";
+				document.getElementsByName("_replyto")[0].placeholder ="Deine E-Mail";
+				document.getElementsByName("_subject")[0].value ="";
+				document.getElementsByName("_subject")[0].placeholder ="betreff";
+				document.getElementsByName("message")[0].value ="";
+				document.getElementsByName("message")[0].placeholder ="Nachricht";
+				document.getElementsByName("sendBtn")[0].value ="Senden";
+				$('.switch-lang').empty();
+				$('.switch-lang').append('<div class="current-lang translate" id="de"><img class="lang-flag" src="data/icons/world-flag-icons/128/Flag_of_Germany.png"/>'+
+							  '<p class="lang-text">Deutsch</p>'+
+							'</div>'+
+							'<div class="lang-dropdown">'+
+							  '<div class="selecting-lang translate" id="fr"><img class="lang-flag" src="data/icons/world-flag-icons/128/Flag_of_France.png"/>'+
+								'<p class="lang-text">Français</p>'+
+							  '</div>'+
+							  '<div class="selecting-lang translate" id="en"><img class="lang-flag" src="data/icons/world-flag-icons/128/Flag_of_United_Kingdom.png"/>'+
+								'<p class="lang-text" >English</p>'+
+							  '</div>'+
+							'</div>');
+				
+			}
+			$('.lang').each(function(index, item) {
+			  $(this).html(arrLang[lang][$(this).attr('key')]);
+			});
+		  });
+		});
+	  </script>
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Abderrahmen Mansour</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link lang" key="Home"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link lang" key="About"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#skills-section" class="nav-link lang" key="Skills"><span>Skills</span></a></li>
+	          <li class="nav-item"><a href="#projects-section" class="nav-link lang" key="Projects"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link lang" key="Contact"><span>Contact</span></a></li>
+			<li class="nav-item">
+					<style>
+							.switch-lang {
+					width: 110px;
+					text-align: left;
+					cursor: pointer;
+					z-index: 50;
+					position: absolute;
+					top: 20px;
+					right: 20px;
+				  }
+				  .switch-lang:hover .lang-dropdown {
+					display: block;
+				  }
+				  .switcher-link {
+					color: #fff;
+				  }
+				  .switcher-link:hover {
+					color: #fff;
+				  }
+				  .current-lang {
+					border-radius: 5px;
+					cursor: pointer;
+				  }
+				  .lang-flag {
+					width: 20px;
+					display: inline-block;
+				  }
+				  .lang-text {
+					display: inline-block;
+					margin-left: 5px;
+					vertical-align: top;
+					margin-top: 2px;
+					color: gray;
+				  }
+				  .lang-dropdown {
+					display: none;
+					border-radius: 5px;
+				  }
+				  .selecting-lang {
+					cursor: pointer;
+				  }
+				  ul > :first-child {
+					border-radius: 5px 5px 0px 0px;
+				  }
+				  ul > :last-child {
+					border-radius: 0px 0px 5px 5px;
+				  }
+				  .lang-text:hover{
+					  color:black;
+				  }
+				  li {
+					list-style-type: none;
+				  }
+						</style>
+						<div class="switch-lang" id="switcher"> 
+							
+						  </div>
+						
+			</li>
+			</ul>
+	      </div>
+	    </div>
+	  </nav> 
+	  
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	      <div class="slider-item ">
+	      	<div class="overlay"></div>
+	        <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third order-md-last img" style="background-image:url(images/me_3.jpg);">
+	          		<div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<a href="youtube.com/watch?v=iVviBV9Tax0" class="icon-video popup-vimeo d-flex justify-content-center align-items-center">
+	    						<span class="ion-ios-play play"></span>
+	    					</a>
+		          	<div class="text">
+		          		<span class="subheading lang" key="Hello">Hello</span>
+			            <h1 class="mb-4 mt-3 lang" key="I am">I am <span>Abderrahmen Mansour</span></h1>
+			            <h2 class="mb-4 lang" key="software" style="color: #0000FF;">A Data Scientist with a background in Mechatronics .</h2>
+						<p><a href="#contact-section" class="btn-custom lang" key="hire">Hire me</a></p>
+						<p><a href="" class="btn-custom lang" key="download" download>Download My CV</a></p>
+					
+						<ul id= "socialIcons">
+							<li class="socialIcon">
+								<a href="https://github.com/Abdou240" title="Github">
+									<div id="tw">
+										<div class="layer2">
+											<svg xmlns="http://www.w3.org/2000/svg" fill="#0075f6" width="80" height="80" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li class="socialIcon">
+								<a href="https://www.linkedin.com/in/abderrahmen-m-934714a2/" title="Linkedin">
+									<div id="tw">
+										<div class="layer2">
+											<svg xmlns="http://www.w3.org/2000/svg" fill="#0075f6" width="80" height="80" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+										</div>
+									</div>
+								</a>
+							</li>	
+						</ul>
+					</div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+
+	      <div class="slider-item">
+	      	<div class="overlay"></div>
+	        <div class="container">
+	          <div class="row d-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third order-md-last img" style="background-image:url(images/me_5.jpg);">
+	          		<div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<a href="youtube.com/watch?v=iVviBV9Tax0" class="icon-video popup-vimeo d-flex justify-content-center align-items-center">
+	    						<span class="ion-ios-play play"></span>
+	    					</a>
+		          	<div class="text">
+			            <h1 class="mb-4 mt-3 lang" key="devMob">I am a <span>Data Scientist</span> from Tunisia</h1>
+						<p><a href="#contact-section" class="btn-custom lang" key="hire">Hire me</a></p>
+						<p><a href="" class="btn-custom lang" key="download" download>Download My CV</a></p>
+						<ul id= "socialIcons">
+							<li class="socialIcon">
+								<a href="https://github.com/Abdou240" title="Github">
+									<div id="tw">
+										<div class="layer2">
+											<svg xmlns="http://www.w3.org/2000/svg" fill="#0075f6" width="80" height="80" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li class="socialIcon">
+								<a href="https://www.linkedin.com/in/abderrahmen-m-934714a2/" title="Linkedin">
+									<div id="tw">
+										<div class="layer2">
+											<svg xmlns="http://www.w3.org/2000/svg" fill="#0075f6" width="80" height="80" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+										</div>
+									</div>
+								</a>
+							</li>	
+						</ul>
+					</div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+	    </div>
+    </section>
+
+    <section class="ftco-about ftco-counter img ftco-section" id="about-section">
+    	<div class="container">
+    		<div class="row d-flex">
+    			<div class="col-md-6 col-lg-5 d-flex">
+    				<div class="img-about img d-flex align-items-stretch">
+    					<div class="overlay"></div>
+	    				<div class="img d-flex align-self-stretch align-items-center w-150"  style="background-image:url(images/me_1.jpg);"  >
+							
+	    				</div>
+    				</div>
+    			</div>
+    			<div class="col-md-6 col-lg-7 pl-lg-5 py-5">
+    				<div class="row justify-content-start pb-3">
+		          <div class="col-md-12 heading-section ftco-animate">
+		          	<span class="subheading lang" key="welcome">Welcome</span>
+		            <h2 class="mb-4 lang" style="font-size: 34px; text-transform: capitalize;" key="aboutme">About Me</h2>
+		            <p class="lang" key="desc1">A Data Scientist with a Mechatronics background, I bring practical experience from the Data Analytics field. My skills are honed through professional work, a Data Science Bootcamp, and an AWS program. I am dedicated to using data to solve complex challenges, continually seeking to innovate and grow in the dynamic world of data science.</p>
+		          </div>
+		        </div>
+		        <div class="row">
+		        	<div class="col-md-6">
+		        		<div class="media block-6 services d-block ftco-animate">
+		              <div class="icon"><span class="flaticon-ideas"></span></div>
+		              <div class="media-body">
+		                <h3 class="heading mb-3 lang" key="mobile">Mechatronics Engineer with expertise in software development</h3>
+		                <p class="lang" key="mobiledesc"> Proficient in creating effective software solutions, demonstrating strong skills in programming and system integration.</p>
+		              </div>
+		            </div> 
+		        	</div>
+		        	<div class="col-md-6">
+		        		<div class="media block-6 services d-block ftco-animate">
+		              <div class="icon"><span class="flaticon-flasks"></span></div>
+		              <div class="media-body">
+		                <h3 class="heading mb-3 lang" key="Application">Data Science</h3>
+		                <p class="lang" key="appdesc">Deep knowladge in Python, Artificial intelligence and Data analysis</p>
+		              </div>
+		            </div> 
+					</div>
+		        </div>
+	          <div class="counter-wrap ftco-animate d-flex mt-md-3">
+              <div class="text p-4 pr-5 bg-primary">
+              	<p class="mb-0">
+	                <span class="number" data-number="5">0</span>
+	                <span class="lang" key="finished">Finished Projects</span>
+                </p>
+              </div>
+	          </div>
+	        </div>
+        </div>
+    	</div>
+    </section>
+		
+		<section class="ftco-section bg-light" id="skills-section">
+			<div class="container">
+				<div class="row justify-content-center pb-5">
+          <div class="col-md-12 heading-section text-center ftco-animate">
+          	<span class="subheading lang" key="skills">Skills</span>
+            <h2 class="mb-4 lang" key="myskills">My Skills</h2>
+            <p class="lang" key="skillsdesc">These are the skills I am proficient in, needless to say a software engineer is always able to adapt to new languages.</p>
+          </div>
+        </div>
+				<div class="row">
+					<div class="col-md-6 animate-box">
+						<div class="progress-wrap ftco-animate">
+							<h3>Spring Boot</h3>
+						</div>
+					</div>
+					<div class="col-md-6 animate-box">
+						<div class="progress-wrap ftco-animate">
+							<h3>Java EE</h3>
+						</div>
+					</div>
+					<div class="col-md-6 animate-box">
+						<div class="progress-wrap ftco-animate">
+							<h3>Angular</h3>
+						</div>
+					</div>
+					<div class="col-md-6 animate-box">
+						<div class="progress-wrap ftco-animate">
+							<h3>NodeJS</h3>
+						</div>
+					</div>
+					<div class="col-md-6 animate-box">
+						<div class="progress-wrap ftco-animate">
+							<h3>.Net</h3>
+						</div>
+					</div>
+					<div class="col-md-6 animate-box">
+						<div class="progress-wrap ftco-animate">
+							<h3>Python</h3>
+						</div>
+					</div>
+					<div class="col-md-6 animate-box">
+						<div class="progress-wrap ftco-animate">
+							<h3>Symfony</h3>
+						</div>
+					</div>
+					<div class="col-md-6 animate-box">
+						<div class="progress-wrap ftco-animate">
+							<h3>JSF Primefaces</h3>
+						</div>
+					</div>
+					<div class="col-md-6 animate-box">
+						<div class="progress-wrap ftco-animate">
+							<h3>PL/SQL</h3>
+						</div>
+					</div>
+					<div class="col-md-6 animate-box">
+						<div class="progress-wrap ftco-animate">
+							<h3>Git</h3>
+						</div>
+					</div>
+				</div>
+				<div class="row justify-content-center py-5 mt-5">
+          <div class="col-md-12 heading-section text-center ftco-animate">
+          	<span class="subheading lang" key="whatdoido">What I Do</span>
+            <h2 class="mb-4 lang" key="sassy">Conception, development and a bit of magic</h2>
+            <p class="lang" key="mydesc">Always start at the drawing boards and then proceed to create <b>innovative</b> products.</p>
+          </div>
+        </div>
+			</div>
+		</section>
+
+		<section class="ftco-section ftco-hireme">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-lg-9 d-flex align-items-center ftco-animate">
+						<h2 class="lang" key="imfor">I'm <span class="lang" key="Available">Available</span> For Permanent position</h2>
+					</div>
+					<div class="col-md-4 col-lg-3 d-flex align-items-center ftco-animate">
+						<p class="mb-0"><a href="#contact-section" class="btn btn-white py-4 px-5 lang" key="hire">Hire me</a></p>
+					</div>
+				</div>
+			</div>
+		</section>
+ 
+
+    <section class="ftco-section ftco-project" id="projects-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-12 heading-section text-center ftco-animate">
+          	<span class="subheading lang" key="Accomplishments">Accomplishments</span>
+            <h2 class="mb-4 lang" key="projects">My Projects</h2>
+            <p class="lang" key="projectsDesc">These are the various projects that i worked on.</p>
+          </div>
+        </div>
+    		<div class="row">
+    			<div class="col-md-8">
+    				<div class="project img ftco-animate img-2 d-flex justify-content-center align-items-center" style="object-fit: scale-down;background-size: contain;height: 720px;">
+						<div class="text text-center p-4" id="viddesc">
+	    					<h3><a href="https://github.com/hachemwasli/LoanSimulation" class="lang" key="mobile">Web Development</a></h3>
+							<span>Spring Boot - JSF </span>
+							<br>
+							<span style="font-size: 10px" class="lang" key="medicalDesc">A real estate website: Dari that allows users to buy, sell and rent all kind of goods with 3D virtual Visits and a loan simulator.</span>
+							<br>
+							<br>
+							<a href="https://github.com/hachemwasli/LoanSimulation">
+								<span class="icon-github" style="font-size: 50px;">
+								</span>
+							</a>
+						</div>
+						<div id="Container">
+							<video autoplay loop id="vid">
+								<source src="images/dari.webm" type="video/webm">
+								<source src="images/out.html" type="video/mp4">
+								</video>
+							<div></div>
+						</div>
+						<div class="overlay"></div>
+	    				
+    				</div>
+    			</div>
+    			<div class="col-md-4">
+    				<div class="row">
+    					<div class="col-md-12">
+		    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/dsi.PNG);background-size:contain;">
+    					<div class="overlay"></div>
+	    				<div class="text text-center p-4">
+	    					<h3><a href="" class="lang" key="webdev">Web Development</a></h3>
+							<span>Spring Boot - Angular</span>
+							<br>
+							<span style="font-size: 10px" class="lang" key="androidDesc">A web application for digitizing school records and managing workflows.</span>
+							<br>
+							<a href="">
+								<span class="icon-github" style="font-size: 50px;">
+								</span>
+							</a>
+
+						<!--	<a href="">
+								<span class="icon-android" style="font-size: 50px;">
+								</span>
+							</a>-->
+						</div>
+    				</div>
+	    				</div>
+	    				<div class="col-md-12">
+		    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/majesteye.PNG);background-size:contain;">
+		    					<div class="overlay"></div>
+			    				<div class="text text-center p-4">
+			    					<h3><a href="" class="lang" key="webdev"> Web Development </a></h3>
+			    					<span>Angular</span>
+									<br>
+									<span style="font-size: 10px" class="lang" key="iosDesc">a web application to collect functional information on proteins, with accurate, consistent and rich
+										annotation - Still in development .</span>
+									<br>
+			    				</div>
+		    				</div>
+	    				</div>
+    				</div>
+    			</div>
+  				</div>
+				<div class="row">
+  				<div class="col-md-8">
+    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/data.png);background-size:contain;">
+    					<div class="overlay"></div>
+	    				<div class="text text-center p-4">
+	    					<h3><a href="" class="lang" key="datasc"> Data Analysis - MajestEYE </a> </h3>
+	    					<span>Python - Machine Learning</span>
+									<br>
+									<span style="font-size: 10px" class="lang" key="unityDesc">Investigating variability of flower phenology and molecular diversity in argan trees.</span>
+									<br>
+									<br>
+							<a href="">
+								<span class="icon-github" style="font-size: 50px;">
+								</span>
+							</a>
+					<!--		<a href="">
+								<span class="icon-android" style="font-size: 50px;">
+								</span>
+							</a>-->
+	    				</div>
+    				</div>
+  				</div>
+				<div class="col-md-4">
+    				<div class="row">
+    					<div class="col-md-12">
+		    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/smart.PNG);background-size:contain;">
+    					<div class="overlay"></div>
+	    				<div class="text text-center p-4">
+	    					<h3><a href="" class="lang" key="webdev">Web Development</a></h3>
+							<span>Symfony</span>
+							<br>
+							<span style="font-size: 10px" class="lang" key="pokedex">A Web Application for Job Hunters and students to find better intenships and part-time jobs.</span>
+							<br>
+							<a href="">
+								<span class="icon-github" style="font-size: 50px;">
+								</span>
+							</a>
+						</div>
+    				</div>
+	    				</div>
+    				</div>
+    			</div>
+				<div class="col-md-8">
+    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/culture.PNG);">
+    					<div class="overlay"></div>
+	    				<div class="text text-center p-4">
+	    					<h3><a href="" class="lang" key="cross"> Cross-platform Development </a> </h3>
+	    					<span>Symfony 3.4 - JavaFX - Codename One</span>
+									<br>
+									<span style="font-size: 10px" class="lang" key="piDesc">A cross-platform App to manage the famous city of culture in Tunisia, introducing features that rely on webservice consumption.</span>
+									<br>
+									<a href="">
+										<span class="icon-github" style="font-size: 50px;">
+										</span>
+									</a>
+	    				</div>
+    				</div>
+  				</div>
+				<div class="col-md-4">
+    				<div class="row">
+	    				<div class="col-md-12">
+		    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/mobile.jpg);">
+		    					<div class="overlay"></div>
+			    				<div class="text text-center p-4">
+			    					<h3><a href="" class="lang" key="mobdev"> Mobile Development </a></h3>
+			    					<span>Java - Codename One</span>
+									<br>
+									<span style="font-size: 10px" class="lang" key="sereptDesc">A mobile application for the management of city of culture in Tunisia.</span>
+									<br>
+									<a href="">
+										<span class="icon-github" style="font-size: 50px;">
+										</span>
+									</a>
+			    				</div>
+		    				</div>
+	    				</div>
+    				</div>
+    			</div>
+				</div>
+    		</div>
+    	</div>
+    </section>
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <span class="subheading lang" key="contact">Contact</span>
+            <h2 class="mb-4 lang" key="contactMe">Contact Me</h2>
+            <p class="lang" key="interested">I am actively seeking permanent employment opportunities in Germany or across Europe, eager to contribute my skills and experience in a dynamic professional setting.</p>
+          </div>
+        </div>
+
+        <div class="row no-gutters block-9">
+          <div class="col-md-6 order-md-last d-flex">
+            <form id="contactform" method="POST" class="bg-light p-4 p-md-5 contact-form">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Your Name" name="name">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Your Email" name="_replyto">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="_subject" placeholder="Subject">
+              </div>
+              <div class="form-group">
+                <textarea id="" cols="30" rows="7" class="form-control" name="message" placeholder="Message"></textarea>
+		      <input type="text" name="_gotcha" style="display:none" />
+              </div>
+              <div class="form-group">
+                <input type="submit" value="Send" name="sendBtn" class="btn btn-primary py-3 px-5">
+              </div>
+            </form>
+          <script>
+    var contactform =  document.getElementById('contactform');
+    contactform.setAttribute('action', '//formspree.io/' + 'firasbenmbarek' + '@' + 'outlook' + '.' + 'com');
+</script>
+          </div>
+
+          <div class="col-md-6 d-flex">
+          	<div class="img" style="background-image: url(images/me_4.png);"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="ftco-footer ftco-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2 lang" key="letsTalk">Let's talk about</h2>
+              <p class="lang" key="americas">I would like to be hired for an internship somewhere in western Europe or the Americas.</p>
+              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                <li class="ftco-animate"><a href="https://github.com/Abdou240"><span class="icon-github"></span></a></li>
+                <li class="ftco-animate"><a href="https://www.linkedin.com/in/abderrahmen-m-934714a2/"><span class="icon-linkedin"></span></a></li>
+                <li class="ftco-animate"><a href="https://www.instagram.com/abder_mnr_09/"><span class="icon-instagram"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-4">
+              <h2 class="ftco-heading-2 lang" key="links">Links</h2>
+              <ul class="list-unstyled">
+                <li><a href="#home-section" class="lang" key="Home2"><span class="icon-long-arrow-right mr-2"></span>Home</a></li>
+                <li><a href="#about-section" class="lang" key="About2"><span class="icon-long-arrow-right mr-2"></span>About</a></li>
+                <li><a href="#skills-section" class="lang" key="Services"><span class="icon-long-arrow-right mr-2"></span>Services</a></li>
+                <li><a href="#projects-section" class="lang" key="Projects2"><span class="icon-long-arrow-right mr-2"></span>Projects</a></li>
+                <li><a href="#contact-section" class="lang" key="Contact2"><span class="icon-long-arrow-right mr-2"></span>Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+             <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2 lang" key="Services2">Services</h2>
+              <ul class="list-unstyled">
+                <li><a href="#" class="lang" key="Design"><span class="icon-long-arrow-right mr-2"></span>Web Design</a></li>
+                <li><a href="#" class="lang" key="Web"><span class="icon-long-arrow-right mr-2"></span>Web Development</a></li>
+                <li><a href="#" class="lang" key="Mobile"><span class="icon-long-arrow-right mr-2"></span>Software Development</a></li>
+                <li><a href="#" class="lang" key="Game"><span class="icon-long-arrow-right mr-2"></span>Data Science</a></li>
+                <li><a href="#" class="lang" key="Software"><span class="icon-long-arrow-right mr-2"></span>Business Intelligence</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+            	<h2 class="ftco-heading-2 lang" key="Questions">Have any Questions ?</h2>
+            	<div class="block-23 mb-3">
+	              <ul>
+	                <li class="lang" key="location"><span class="icon icon-map-marker" style="color:rgba(255, 255, 255, 0.7)"></span><span class="text">Erfurt, Germany.</span></li>
+	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">(+49) 15735514123</span></a></li>
+	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">&nbsp;hachem.wasli@esprit.tn</span></a></li>
+	              </ul>
+	            </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+
+<!-- Mirrored from firasdev.github.io/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 16 Jan 2021 10:59:06 GMT -->
+</html>
